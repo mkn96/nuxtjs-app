@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/react", {data:[{}],fetch:{},mutations:[]});
