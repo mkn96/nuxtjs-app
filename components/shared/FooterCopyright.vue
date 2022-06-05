@@ -44,8 +44,8 @@ import { mapState } from "vuex";
 export default {
   data: () => {
     return {
-      projectName: "Build with NuxtJS 🚀",
-      author: "mkn 🥷",
+      projectName: "Build with NuxtJS.",
+      author: "mkn.",
     };
   },
   computed: {

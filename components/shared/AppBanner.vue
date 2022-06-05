@@ -20,7 +20,6 @@
           text-center
           sm:text-left
           text-ternary-dark
-          dark:text-primary-light
           uppercase
         "
       >
@@ -61,10 +60,10 @@
             sm:py-3
             shadow-lg
             rounded-lg
-            bg-indigo-50
+            bg-indigo-500
             focus:ring-1 focus:ring-indigo-900
-            hover:bg-indigo-500
-            text-gray-500
+            hover:bg-green-500
+            text-gray-50
             hover:text-white
             duration-500
           "
@@ -113,27 +112,22 @@ export default {
 </script>
 
 <style scoped>
-.typewriter h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  /* border-right: .15em solid gray; // The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(20, end),
-    blink-caret .75s step-end infinite;
-}
+	h2 {
+  background: radial-gradient(circle, #483D8B 0%, #20B2AA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: animatedGradient 1.5s infinite ease;
+  animation-direction: alternate;
+  }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+  @keyframes animatedGradient {
+  from {
+    background-size: 100%;
+  }
 
-/* The typewriter cursor effect
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: gray; }
+  to {
+    background-size: 250%;
+  }
 }
-*/ 
 </style>

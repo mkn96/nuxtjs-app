@@ -17,8 +17,7 @@ export default {
       :alt="client.title"
       class="
         dark:bg-slate-400
-        w-64
-        h-40
+        object-fill h-48 w-96
         py-5
         px-10
         border border-ternary-light

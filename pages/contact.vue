@@ -1,7 +1,9 @@
 <template>
 <div>
  <ScrollProgress />
+ 
   <div class="container mx-auto flex flex-col-reverse md:flex-row md:py-10 md:mt-20">
+    
     <!-- Contact form -->
     <ContactForm />
 
